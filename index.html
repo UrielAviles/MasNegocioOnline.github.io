@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Más Negocio Online — Agencia de Marketing Digital Premium</title>
+  <meta name="description"
+    content="Más Negocio Online: agencia de marketing digital premium. Creación de sitios web, producción de video, desarrollo de software y sistemas de automatización.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#hero" class="navbar-brand">
+        <img src="assets/images/logo-mascot.png" alt="Más Negocio Online mascot" class="brand-mascot">
+        <img src="assets/images/logo-wordmark.png" alt="Más Negocio Online" class="brand-wordmark">
+      </a>
+      <div class="nav-links" id="nav-links">
+        <a href="#servicios">Servicios</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#proceso">Proceso</a>
+        <a href="#testimonios">Testimonios</a>
+        <a href="portafolio.html" class="nav-portfolio">Portafolio</a>
+        <a href="#contacto" class="nav-cta">Contáctanos</a>
+      </div>
+      <div class="nav-actions" style="display: flex; align-items: center; gap: 20px;">
+        <button id="theme-toggle" aria-label="Alternar Modo Oscuro/Claro"
+          style="background: none; border: none; font-size: 1.4rem; cursor: pointer; color: var(--color-gold); transition: var(--transition); display: flex; align-items: center; justify-content: center;">
+          <span id="theme-icon">☀️</span>
+        </button>
+        <div class="mobile-toggle" id="mobile-toggle">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="nav-overlay" id="nav-overlay"></div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <canvas id="particles-canvas"></canvas>
+    <div class="container">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <div class="hero-badge"><span class="dot"></span> Agencia Digital Premium</div>
+          <h1>Elevamos Tu <span class="text-gold">Presencia Digital</span> al Siguiente Nivel</h1>
+          <p>Soluciones integrales de marketing digital, desarrollo web, producción audiovisual y automatización
+            inteligente para impulsar tu negocio.</p>
+          <div class="hero-buttons">
+            <a href="#contacto" class="btn-primary">Solicitar Consulta →</a>
+            <a href="#servicios" class="btn-outline">Nuestros Servicios</a>
+          </div>
+        </div>
+        <div class="hero-mascot-wrap">
+          <img src="assets/images/logo-mascot.png" alt="Más Negocio Online" class="hero-mascot-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <div class="stats-bar container">
+    <div class="stats-inner">
+      <div class="stat-item"><span class="stat-number" data-target="150" data-suffix="+">0</span><span
+          class="stat-label">Proyectos</span></div>
+      <div class="stat-item"><span class="stat-number" data-target="98" data-suffix="%">0</span><span
+          class="stat-label">Satisfacción</span></div>
+      <div class="stat-item"><span class="stat-number" data-target="50" data-suffix="+">0</span><span
+          class="stat-label">Clientes</span></div>
+      <div class="stat-item"><span class="stat-number" data-target="5" data-suffix=" Años">0</span><span
+          class="stat-label">Experiencia</span></div>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section class="services section-padding" id="servicios">
+    <div class="container">
+      <div class="text-center fade-in">
+        <span class="section-label">Lo Que Hacemos</span>
+        <h2 class="section-title">Servicios <span class="text-gold">Exclusivos</span></h2>
+        <div class="gold-line"></div>
+        <p class="section-subtitle">Cada solución está diseñada a medida para maximizar el impacto de tu marca en el
+          mundo digital.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card fade-in">
+          <div class="service-icon">🌐</div>
+          <h3>Creación de Sitios Web</h3>
+          <p>Diseño y desarrollo de sitios web a medida con estética premium, optimizados para conversión y experiencia
+            de usuario.</p>
+          <a href="#" class="learn-more js-open-modal" data-service="web">Más información →</a>
+        </div>
+        <div class="service-card fade-in">
+          <div class="service-icon">🎬</div>
+          <h3>Grabación de Publicidad</h3>
+          <p>Producción audiovisual profesional para campañas publicitarias que capturan la esencia de tu marca.</p>
+          <a href="#" class="learn-more js-open-modal" data-service="publicidad">Más información →</a>
+        </div>
+        <div class="service-card fade-in">
+          <div class="service-icon">✂️</div>
+          <h3>Edición de Video</h3>
+          <p>Post-producción cinematográfica con efectos visuales, corrección de color y motion graphics de alto nivel.
+          </p>
+          <a href="#" class="learn-more js-open-modal" data-service="edicion_video">Más información →</a>
+        </div>
+        <div class="service-card fade-in">
+          <div class="service-icon">🎨</div>
+          <h3>Edición de Imágenes</h3>
+          <p>Retoque fotográfico profesional, diseño gráfico y creación de contenido visual impactante.</p>
+          <a href="#" class="learn-more js-open-modal" data-service="edicion_imagen">Más información →</a>
+        </div>
+        <div class="service-card fade-in">
+          <div class="service-icon">⚙️</div>
+          <h3>Desarrollo de Software Backend</h3>
+          <p>Arquitectura robusta y escalable. APIs, bases de datos e infraestructura cloud para tu plataforma digital.
+          </p>
+          <a href="#" class="learn-more js-open-modal" data-service="backend">Más información →</a>
+        </div>
+        <div class="service-card fade-in">
+          <div class="service-icon">📞</div>
+          <h3>Sistema de Llamadas Automatizadas</h3>
+          <p>Atención telefónica inteligente con IA que responde llamadas 24/7, mejorando la experiencia del cliente.
+          </p>
+          <a href="#" class="learn-more js-open-modal" data-service="llamadas">Más información →</a>
+        </div>
+        <div class="service-card fade-in">
+          <div class="service-icon">💬</div>
+          <h3>Sistema de WhatsApp Automatizado</h3>
+          <p>Chatbots avanzados para WhatsApp que gestionan consultas, ventas y soporte de forma autónoma.</p>
+          <a href="#" class="learn-more js-open-modal" data-service="whatsapp">Más información →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section-padding" id="nosotros">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image fade-in">
+          <img src="assets/images/services-bg.png" alt="Nuestro equipo">
+        </div>
+        <div class="about-content fade-in">
+          <span class="section-label">Sobre Nosotros</span>
+          <h2>Convertimos tu presencia digital en <span class="text-gold">ventas reales</span></h2>
+          <p>En <strong>Más Negocio Online</strong> ayudamos a empresas, emprendedores y negocios locales a crecer en
+            internet con estrategias digitales claras, creativas y medibles.</p>
+          <p>Combinamos diseño, contenido, automatización con IA y marketing digital para que tu marca no solo se vea
+            profesional, sino que también atraiga clientes, genere confianza y aumente sus oportunidades de venta.</p>
+          <p>Trabajamos contigo de forma cercana, entendiendo tu negocio, tu mercado y tus objetivos para crear
+            soluciones digitales que realmente funcionen.</p>
+          <div class="about-features">
+            <div class="about-feature"><span class="check">✓</span><span>Estrategias digitales adaptadas a tu
+                negocio</span></div>
+            <div class="about-feature"><span class="check">✓</span><span>Automatización con IA para ahorrar tiempo y
+                vender mejor</span></div>
+            <div class="about-feature"><span class="check">✓</span><span>Diseño, contenido y publicidad con enfoque
+                profesional</span></div>
+            <div class="about-feature"><span class="check">✓</span><span>Resultados medibles y acompañamiento
+                constante</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process section-padding" id="proceso">
+    <div class="container">
+      <div class="text-center fade-in">
+        <span class="section-label">Cómo Trabajamos</span>
+        <h2 class="section-title">Nuestro <span class="text-gold">Proceso</span></h2>
+        <div class="gold-line"></div>
+        <p class="section-subtitle">Un enfoque estructurado para garantizar resultados excepcionales en cada proyecto.
+        </p>
+      </div>
+      <div class="process-steps">
+        <div class="step fade-in">
+          <div class="step-number">01</div>
+          <h3>Descubrimiento</h3>
+          <p>Analizamos tu negocio, objetivos y audiencia para diseñar la estrategia perfecta.</p>
+        </div>
+        <div class="step fade-in">
+          <div class="step-number">02</div>
+          <h3>Estrategia</h3>
+          <p>Creamos un plan detallado con métricas claras y cronograma definido.</p>
+        </div>
+        <div class="step fade-in">
+          <div class="step-number">03</div>
+          <h3>Ejecución</h3>
+          <p>Nuestro equipo implementa cada elemento con la máxima calidad y precisión.</p>
+        </div>
+        <div class="step fade-in">
+          <div class="step-number">04</div>
+          <h3>Optimización</h3>
+          <p>Monitoreamos, ajustamos y mejoramos continuamente para maximizar resultados.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials section-padding" id="testimonios">
+    <div class="container">
+      <div class="text-center fade-in">
+        <span class="section-label">Testimonios</span>
+        <h2 class="section-title">Lo Que Dicen <span class="text-gold">Nuestros Clientes</span></h2>
+        <div class="gold-line"></div>
+      </div>
+      <div class="testimonial-grid">
+        <div class="testimonial-card fade-in">
+          <div class="testimonial-stars">★★★★★</div>
+          <blockquote>"Muy buen editor de videos, se los recomiendo mucho. Fue una herramienta muy útil para mi negocio
+            y trabajos."</blockquote>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">D</div>
+            <div class="testimonial-info"><strong>Diego Uluac</strong><span>Cliente</span></div>
+          </div>
+        </div>
+        <div class="testimonial-card fade-in">
+          <div class="testimonial-stars">★★★★★</div>
+          <blockquote>"El sistema de WhatsApp automatizado incrementó nuestras ventas un 40%. Su equipo es simplemente
+            excepcional."</blockquote>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">CG</div>
+            <div class="testimonial-info"><strong>Carlos García</strong><span>Director, TechVentures</span></div>
+          </div>
+        </div>
+        <div class="testimonial-card fade-in">
+          <div class="testimonial-stars">★★★★★</div>
+          <blockquote>"La calidad de producción de video y la atención al detalle nos hicieron sentir que trabajábamos
+            con una agencia de primer nivel mundial."</blockquote>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">AL</div>
+            <div class="testimonial-info"><strong>Ana López</strong><span>Fundadora, Eleganza</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact section-padding" id="contacto">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info fade-in">
+          <span class="section-label">Contacto</span>
+          <h2>Comencemos Tu <span class="text-gold">Proyecto</span></h2>
+          <p>Estamos listos para llevar tu negocio al siguiente nivel. Contáctanos y descubre cómo podemos ayudarte.</p>
+          <div class="contact-detail">
+            <div class="contact-icon">📞</div>
+            <div>
+              <h4>Teléfono</h4><a href="tel:+9984828518">+998 482 8518</a>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-icon">💬</div>
+            <div>
+              <h4>WhatsApp</h4><a href="https://wa.me/9984828518" target="_blank">+998 482 8518</a>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-icon">✉️</div>
+            <div>
+              <h4>Email</h4><a href="mailto:contacto@masnegocioonline.com">contacto@masnegocioonline.com</a>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-icon">🕐</div>
+            <div>
+              <h4>Horario</h4>
+              <p>Lun - Vie: 9:00 AM - 6:00 PM</p>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form fade-in" id="contact-form">
+          <div class="form-row">
+            <div class="form-group"><label for="name">Nombre Completo</label><input type="text" id="name" name="nombre"
+                placeholder="Tu nombre" required></div>
+            <div class="form-group"><label for="email">Email/Teléfono</label><input type="text" id="email" name="email"
+                placeholder="tu@email.com / Teléfono" required></div>
+          </div>
+          <div class="form-group">
+            <label for="service">Servicio de Interés</label>
+            <select id="service" name="servicio">
+              <option value="">Selecciona un servicio</option>
+              <option value="Creación de Sitios Web">Creación de Sitios Web</option>
+              <option value="Grabación de Publicidad">Grabación de Publicidad</option>
+              <option value="Edición de Video">Edición de Video</option>
+              <option value="Edición de Imágenes">Edición de Imágenes</option>
+              <option value="Desarrollo de Software Backend">Desarrollo de Software Backend</option>
+              <option value="Sistema de Llamadas Automatizadas">Sistema de Llamadas Automatizadas</option>
+              <option value="Sistema de WhatsApp Automatizado">Sistema de WhatsApp Automatizado</option>
+            </select>
+          </div>
+          <div class="form-group"><label for="message">Mensaje</label><textarea id="message" name="mensaje"
+              placeholder="Cuéntanos sobre tu proyecto..." required></textarea></div>
+          <input type="hidden" name="_subject" value="Nuevo mensaje de contacto en Más Negocio Online">
+          <input type="hidden" name="_template" value="box">
+          <button type="submit" class="btn-submit">Enviar Mensaje</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#hero" class="navbar-brand footer-logo-brand">
+            <img src="assets/images/logo-mascot.png" alt="Logo" class="brand-mascot" style="height:48px;width:48px">
+            <img src="assets/images/logo-wordmark.png" alt="Más Negocio Online" class="brand-wordmark footer-wordmark">
+          </a>
+          <p>Tu socio estratégico en transformación digital. Soluciones premium para negocios que buscan la excelencia.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Servicios</h4>
+          <a href="#servicios">Sitios Web</a>
+          <a href="#servicios">Video & Publicidad</a>
+          <a href="#servicios">Edición de Imagen</a>
+          <a href="#servicios">Desarrollo Backend</a>
+        </div>
+        <div class="footer-col">
+          <h4>Automatización</h4>
+          <a href="#servicios">Llamadas con IA</a>
+          <a href="#servicios">WhatsApp Bot</a>
+          <a href="#proceso">Nuestro Proceso</a>
+          <a href="#testimonios">Testimonios</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <a href="tel:+9984828518">+998 482 8518</a>
+          <a href="https://wa.me/9984828518" target="_blank">WhatsApp</a>
+          <a href="mailto:contacto@masnegocioonline.com">Email</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Más Negocio Online. Todos los derechos reservados.</span>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">in</a>
+          <a href="#" aria-label="LinkedIn">Li</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOAT -->
+  <a href="https://wa.me/9984828518" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+    <svg viewBox="0 0 32 32">
+      <path
+        d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004c0 3.5 1.128 6.744 3.046 9.378L1.054 31.2l6.012-1.93A15.9 15.9 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.33 22.618c-.39 1.1-1.932 2.014-3.168 2.28-.846.18-1.95.324-5.67-1.218-4.762-1.974-7.826-6.81-8.064-7.126-.23-.316-1.932-2.574-1.932-4.908s1.224-3.482 1.658-3.96c.434-.478.948-.598 1.264-.598.316 0 .632.004.908.016.292.014.684-.11 1.07.816.39.948 1.328 3.242 1.444 3.478.118.236.196.512.04.828-.158.316-.236.512-.472.79-.236.276-.498.618-.71.828-.236.236-.482.49-.206.962.276.472 1.226 2.022 2.632 3.276 1.81 1.612 3.336 2.112 3.808 2.348.472.236.748.196 1.024-.118.276-.316 1.186-1.382 1.502-1.856.316-.472.632-.394 1.066-.236.434.158 2.728 1.286 3.196 1.52.472.236.784.354.902.55.116.196.116 1.132-.274 2.232z" />
+    </svg>
+  </a>
+
+  <!-- MODAL -->
+  <div class="service-modal-overlay" id="service-modal">
+    <div class="service-modal-content">
+      <button class="service-modal-close" id="modal-close" aria-label="Cerrar modal">&times;</button>
+      <div id="modal-body" class="service-modal-body">
+        <!-- Content gets injected here -->
+      </div>
+      <a href="#contacto" class="btn-primary modal-cta" id="modal-cta">Solicitar este servicio</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio — Más Negocio Online</title>
+  <meta name="description"
+    content="Portafolio de trabajos realizados por Más Negocio Online.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <img src="assets/images/logo-mascot.png" alt="Más Negocio Online mascot" class="brand-mascot">
+        <img src="assets/images/logo-wordmark.png" alt="Más Negocio Online" class="brand-wordmark">
+      </a>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html#servicios">Servicios</a>
+        <a href="index.html#nosotros">Nosotros</a>
+        <a href="index.html#proceso">Proceso</a>
+        <a href="index.html#testimonios">Testimonios</a>
+        <a href="portafolio.html" class="nav-portfolio" style="color: var(--color-gold);">Portafolio</a>
+        <a href="index.html#contacto" class="nav-cta">Contáctanos</a>
+      </div>
+      <div class="nav-actions" style="display: flex; align-items: center; gap: 20px;">
+        <button id="theme-toggle" aria-label="Alternar Modo Oscuro/Claro" style="background: none; border: none; font-size: 1.4rem; cursor: pointer; color: var(--color-gold); transition: var(--transition); display: flex; align-items: center; justify-content: center;">
+          <span id="theme-icon">☀️</span>
+        </button>
+        <div class="mobile-toggle" id="mobile-toggle">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="nav-overlay" id="nav-overlay"></div>
+
+  <!-- FONDO DEL EDITOR -->
+  <div class="editor-bg-image">
+    <img src="assets/images/El editor.PNG" alt="Editor Background">
+  </div>
+
+  <!-- PORTAFOLIO HEADER -->
+  <section class="section-padding" style="position: relative; padding-top: 180px; padding-bottom: 60px; text-align: center; z-index: 1;">
+    <div class="container">
+      <span class="section-label">Nuestro Trabajo</span>
+      <h1 class="section-title">Portafolio de <span class="text-gold">Proyectos</span></h1>
+      <div class="gold-line"></div>
+      <p class="section-subtitle" style="max-width: 600px; margin: 0 auto;">Alberto Uriel Avilés Díaz</p>
+    </div>
+  </section>
+
+  <!-- CATEGORÍA: PRODUCCIÓN AUDIOVISUAL -->
+  <section class="portfolio-category section-padding" id="produccion-audiovisual" style="padding-top: 0;">
+    <div class="container">
+      <div class="text-center fade-in" style="margin-bottom: 40px;">
+        <h2 class="section-title" style="font-size: 2.2rem;">Producción <span class="text-gold">Audiovisual</span></h2>
+        <div class="gold-line" style="margin: 15px auto;"></div>
+        <p class="section-subtitle">Campañas publicitarias, edición de video, diseño de miniaturas y contenido para redes sociales.</p>
+      </div>
+      
+      <div class="portfolio-carousel-wrapper fade-in">
+        <button class="carousel-btn carousel-prev" id="carousel-prev" aria-label="Anterior">&#10094;</button>
+        
+        <div class="portfolio-carousel">
+          <div class="carousel-track" id="carousel-track">
+            
+            <!-- YouTube 1 -->
+            <div class="carousel-slide youtube-slide current-slide">
+              <div class="carousel-content">
+                <template class="lazy-embed">
+                  <iframe style="width: 100%; height: 100%; position: absolute; top: 0; left: 0;" src="https://www.youtube.com/embed/WXYNuDHunRE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </template>
+                <div class="embed-container youtube-container"></div>
+              </div>
+            </div>
+
+            <!-- YouTube 2 -->
+            <div class="carousel-slide youtube-slide">
+              <div class="carousel-content">
+                <template class="lazy-embed">
+                  <iframe style="width: 100%; height: 100%; position: absolute; top: 0; left: 0;" src="https://www.youtube.com/embed/m4wznfLw1aE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </template>
+                <div class="embed-container youtube-container"></div>
+              </div>
+            </div>
+
+
+
+            <!-- Instagram 1 -->
+            <div class="carousel-slide">
+              <div class="carousel-content">
+                <div class="embed-container vertical-container">
+                  <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DTlqpvFj4wp/" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:var(--radius-md); margin: 0 auto; max-width:100%; min-width:325px; padding:0; width:100%;"></blockquote>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        
+        <button class="carousel-btn carousel-next" id="carousel-next" aria-label="Siguiente">&#10095;</button>
+        <div class="carousel-dots" id="carousel-dots"></div>
+      </div>
+
+      <!-- SECCIÓN DE COLABORACIONES (TIKTOK) -->
+      <div class="collabs-section fade-in" style="margin-top: 80px; text-align: center;">
+        <h3 style="font-family: var(--font-heading); font-size: 1.8rem; color: var(--color-heading); margin-bottom: 40px;">También hemos colaborado con:</h3>
+        <div class="collabs-grid" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; align-items: stretch;">
+          
+          <!-- Tammy Parra -->
+          <div class="collab-card" style="background: var(--color-bg-card); padding: 30px; border-radius: var(--radius-md); box-shadow: var(--shadow-card); display: flex; flex-direction: column; align-items: center; gap: 20px; width: 100%; max-width: 350px; border-top: 3px solid var(--color-gold);">
+            <div style="width: 100px; height: 100px; border-radius: 50%; background: #222; display: flex; align-items: center; justify-content: center; overflow: hidden; border: 2px solid var(--color-gold);">
+              <img src="assets/images/Tammy-Parra.png" alt="Tammy Parra" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <h4 style="color: var(--color-heading); margin: 0; font-size: 1.3rem;">Tammy Parra</h4>
+            <p style="color: var(--color-text-muted); font-size: 0.95rem; margin-bottom: 10px;">Campañas virales y contenido de estilo de vida.</p>
+            <div style="display: flex; flex-direction: column; gap: 15px; width: 100%; margin-top: auto;">
+              <a href="https://www.tiktok.com/@tammy.parra/video/7597640314064506120" target="_blank" class="btn-secondary" style="width: 100%; text-align: center; display: flex; align-items: center; justify-content: center; gap: 10px;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 15.68a6.34 6.34 0 006.27 6.36 6.34 6.34 0 006.25-6.36V7.98a8.23 8.23 0 005.48 2.01V6.54a4.8 4.8 0 01-3.41-.85z"/></svg>
+                Ver Campaña 1
+              </a>
+              <a href="https://www.tiktok.com/@tammy.parra/video/7599809748778700050" target="_blank" class="btn-secondary" style="width: 100%; text-align: center; display: flex; align-items: center; justify-content: center; gap: 10px;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 15.68a6.34 6.34 0 006.27 6.36 6.34 6.34 0 006.25-6.36V7.98a8.23 8.23 0 005.48 2.01V6.54a4.8 4.8 0 01-3.41-.85z"/></svg>
+                Ver Campaña 2
+              </a>
+            </div>
+          </div>
+
+          <!-- LTM Mudanzas -->
+          <div class="collab-card" style="background: var(--color-bg-card); padding: 30px; border-radius: var(--radius-md); box-shadow: var(--shadow-card); display: flex; flex-direction: column; align-items: center; gap: 20px; width: 100%; max-width: 350px; border-top: 3px solid var(--color-gold);">
+            <div style="width: 100px; height: 100px; border-radius: 50%; background: #FFF; display: flex; align-items: center; justify-content: center; overflow: hidden; border: 2px solid var(--color-gold);">
+              <!-- Reemplaza src con assets/images/LTM.png si ya subiste la imagen -->
+              <img src="assets/images/LTM.png" alt="LTM Mudanzas" style="width: 90%; height: 90%; object-fit: contain;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+              <span style="font-size: 2rem; color: #000; display: none;">LTM</span>
+            </div>
+            <h4 style="color: var(--color-heading); margin: 0; font-size: 1.3rem;">LTM Mudanzas</h4>
+            <p style="color: var(--color-text-muted); font-size: 0.95rem; margin-bottom: 10px;">Producción audiovisual corporativa y logística.</p>
+            <div style="display: flex; flex-direction: column; gap: 15px; width: 100%; margin-top: auto;">
+              <a href="https://www.tiktok.com/@lasradelasmudanzas/video/7614708712422378760" target="_blank" class="btn-secondary" style="width: 100%; text-align: center; display: flex; align-items: center; justify-content: center; gap: 10px;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 15.68a6.34 6.34 0 006.27 6.36 6.34 6.34 0 006.25-6.36V7.98a8.23 8.23 0 005.48 2.01V6.54a4.8 4.8 0 01-3.41-.85z"/></svg>
+                Ver Campaña 1
+              </a>
+              <a href="https://www.tiktok.com/@lasradelasmudanzas/video/7581640651348004114" target="_blank" class="btn-secondary" style="width: 100%; text-align: center; display: flex; align-items: center; justify-content: center; gap: 10px;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 15.68a6.34 6.34 0 006.27 6.36 6.34 6.34 0 006.25-6.36V7.98a8.23 8.23 0 005.48 2.01V6.54a4.8 4.8 0 01-3.41-.85z"/></svg>
+                Ver Campaña 2
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- OTRAS CATEGORÍAS (PRÓXIMAMENTE) -->
+  <section class="portfolio-category section-padding" id="otros-proyectos" style="padding-top: 40px; padding-bottom: 80px;">
+    <div class="container">
+      <div class="text-center fade-in" style="margin-bottom: 40px;">
+        <h2 class="section-title" style="font-size: 2.2rem;">Otras <span class="text-gold">Especialidades</span></h2>
+        <div class="gold-line" style="margin: 15px auto;"></div>
+      </div>
+      
+      <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+        <div class="service-card fade-in">
+          <div class="service-icon" style="font-size: 3rem; margin-bottom: 20px;">🌐</div>
+          <h3>Sitios Web</h3>
+          <p>Estamos preparando este espacio para mostrarte nuestros casos de éxito en desarrollo y diseño web.</p>
+        </div>
+        <div class="service-card fade-in">
+          <div class="service-icon" style="font-size: 3rem; margin-bottom: 20px;">⚙️</div>
+          <h3>Sistemas de Automatización</h3>
+          <p>Casos de estudio de automatización con llamadas de IA y WhatsApp para nuestros clientes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="navbar-brand footer-logo-brand">
+            <img src="assets/images/logo-mascot.png" alt="Logo" class="brand-mascot" style="height:48px;width:48px">
+            <img src="assets/images/logo-wordmark.png" alt="Más Negocio Online" class="brand-wordmark footer-wordmark">
+          </a>
+          <p>Tu socio estratégico en transformación digital. Soluciones premium para negocios que buscan la excelencia.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Servicios</h4>
+          <a href="index.html#servicios">Sitios Web</a>
+          <a href="index.html#servicios">Video & Publicidad</a>
+          <a href="index.html#servicios">Edición de Imagen</a>
+          <a href="index.html#servicios">Desarrollo Backend</a>
+        </div>
+        <div class="footer-col">
+          <h4>Automatización</h4>
+          <a href="index.html#servicios">Llamadas con IA</a>
+          <a href="index.html#servicios">WhatsApp Bot</a>
+          <a href="index.html#proceso">Nuestro Proceso</a>
+          <a href="index.html#testimonios">Testimonios</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <a href="tel:+9984828518">+998 482 8518</a>
+          <a href="https://wa.me/9984828518" target="_blank">WhatsApp</a>
+          <a href="mailto:contacto@masnegocioonline.com">Email</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Más Negocio Online. Todos los derechos reservados.</span>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">in</a>
+          <a href="#" aria-label="LinkedIn">Li</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOAT -->
+  <a href="https://wa.me/9984828518" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+    <svg viewBox="0 0 32 32">
+      <path
+        d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004c0 3.5 1.128 6.744 3.046 9.378L1.054 31.2l6.012-1.93A15.9 15.9 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.33 22.618c-.39 1.1-1.932 2.014-3.168 2.28-.846.18-1.95.324-5.67-1.218-4.762-1.974-7.826-6.81-8.064-7.126-.23-.316-1.932-2.574-1.932-4.908s1.224-3.482 1.658-3.96c.434-.478.948-.598 1.264-.598.316 0 .632.004.908.016.292.014.684-.11 1.07.816.39.948 1.328 3.242 1.444 3.478.118.236.196.512.04.828-.158.316-.236.512-.472.79-.236.276-.498.618-.71.828-.236.236-.482.49-.206.962.276.472 1.226 2.022 2.632 3.276 1.81 1.612 3.336 2.112 3.808 2.348.472.236.748.196 1.024-.118.276-.316 1.186-1.382 1.502-1.856.316-.472.632-.394 1.066-.236.434.158 2.728 1.286 3.196 1.52.472.236.784.354.902.55.116.196.116 1.132-.274 2.232z" />
+    </svg>
+  </a>
+
+  <script async src="https://www.tiktok.com/embed.js"></script>
+  <script async src="//www.instagram.com/embed.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
