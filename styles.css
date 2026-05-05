@@ -914,9 +914,13 @@ img { max-width: 100%; display: block; }
   .nav-links.open { right: 0; }
   .mobile-toggle { display: flex; z-index: 1002; }
   .services-grid { grid-template-columns: 1fr; }
+  .stats-bar { margin-top: 20px; }
   .stats-inner { grid-template-columns: 1fr 1fr; }
   .process-steps { grid-template-columns: 1fr; }
-  .hero h1 { font-size: 2.4rem; }
+  .hero { padding-bottom: 60px; height: auto; }
+  .hero-buttons { flex-direction: column; width: 100%; gap: 12px; }
+  .hero-buttons a { width: 100%; justify-content: center; }
+  .hero h1 { font-size: 2.2rem; }
   .form-row { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; }
   .footer-bottom { flex-direction: column; gap: 16px; text-align: center; }
