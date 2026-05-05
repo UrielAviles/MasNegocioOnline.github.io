@@ -585,7 +585,28 @@ img { max-width: 100%; display: block; }
   color: var(--color-text-muted);
   font-style: italic;
   line-height: 1.7;
+}
+
+.testimonial-text-truncate {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 12px !important;
+}
+
+.read-more-link {
+  color: var(--color-gold);
+  font-size: 0.85rem;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
   margin-bottom: 24px;
+  transition: var(--transition);
+}
+.read-more-link:hover {
+  text-shadow: 0 0 8px var(--color-gold);
+  transform: translateX(3px);
 }
 .testimonial-author { display: flex; align-items: center; gap: 14px; }
 .testimonial-avatar {
