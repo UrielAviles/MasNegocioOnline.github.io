@@ -37,6 +37,7 @@ fadeEls.forEach(el => observer.observe(el));
 
 // ===== COUNTER ANIMATION =====
 function animateCounter(el) {
+  if (!el.dataset.target) return; // stat estático, no animar
   const target = parseInt(el.dataset.target);
   const suffix = el.dataset.suffix || '';
   const duration = 2000;
